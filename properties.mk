@@ -126,3 +126,10 @@ vendor.media.omx=0
 # NFC
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.camera.notify_nfc=1
+
+# IMS
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.vendor.ims.disableADBLogs=1 \
+persist.vendor.ims.disableDebugLogs=1 \
+persist.vendor.ims.disableIMSLogs=1 \
+persist.vendor.ims.disableQXDMLogs=1
