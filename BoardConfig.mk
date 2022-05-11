@@ -138,6 +138,9 @@ TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
+BOARD_EROFS_COMPRESSOR := lz4hc,9
+BOARD_EROFS_PCLUSTER_SIZE := 65536
+
 # PowerShare
 TARGET_POWERSHARE_NODE := /sys/class/qcom-battery/wireless_boost_en
 
