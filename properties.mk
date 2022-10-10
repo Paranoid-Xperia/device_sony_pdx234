@@ -63,7 +63,7 @@ vendor.gralloc.disable_ubwc=0 \
 vendor.gralloc.enable_logs=0
 
 PRODUCT_SYSTEM_PROPERTIES += \
-debug.sf.latch_unsignaled=1
+debug.sf.auto_latch_unsignaled=1
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
