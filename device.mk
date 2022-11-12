@@ -57,7 +57,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.cs40l25
+    android.hardware.vibrator-sony.service.cs40l25
 
 # QTI components
 TARGET_COMMON_QTI_COMPONENTS := \
