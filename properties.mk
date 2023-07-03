@@ -133,3 +133,10 @@ persist.vendor.ims.disableADBLogs=1 \
 persist.vendor.ims.disableDebugLogs=1 \
 persist.vendor.ims.disableIMSLogs=1 \
 persist.vendor.ims.disableQXDMLogs=1
+
+# Renderer
+PRODUCT_SYSTEM_PROPERTIES += \
+debug.hwui.renderer=skiavk
+
+PRODUCT_VENDOR_PROPERTIES += \
+debug.renderengine.backend=skiavkthreaded
