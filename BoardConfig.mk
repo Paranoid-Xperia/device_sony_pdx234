@@ -75,6 +75,10 @@ TARGET_MERGE_DTBS_WILDCARD ?= kalama*base
 BOARD_INIT_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
+# HIDL
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest_kalama.xml
+
 # Kernel
 BOARD_KERNEL_CMDLINE += nosoftlockup
 BOARD_BOOTCONFIG := \
