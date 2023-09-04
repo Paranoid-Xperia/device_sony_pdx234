@@ -112,6 +112,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 media.settings.xml=/vendor/etc/media_profiles_kalama.xml
 
 PRODUCT_VENDOR_PROPERTIES += \
+debug.stagefright.c2inputsurface=-1 \
 media.stagefright.enable-aac=true \
 media.stagefright.enable-fma2dp=true \
 media.stagefright.enable-http=true \
@@ -119,7 +120,8 @@ media.stagefright.enable-player=true \
 media.stagefright.enable-qcp=true \
 media.stagefright.enable-scan=true \
 media.stagefright.thumbnail.prefer_hw_codecs=true \
-ro.mediaserver.64b.enable=true
+ro.mediaserver.64b.enable=true \
+vendor.media.omx=0
 
 # NFC
 PRODUCT_SYSTEM_PROPERTIES += \
