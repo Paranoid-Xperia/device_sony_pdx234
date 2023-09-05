@@ -76,8 +76,13 @@ BOARD_INIT_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
 # HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/configs/vintf/framework_matrix_sony.xml \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/configs/vintf/manifest_kalama.xml
+    $(DEVICE_PATH)/configs/vintf/manifest_kalama.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_sony.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += nosoftlockup
