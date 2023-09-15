@@ -4,14 +4,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package com.sony.settings;
-
+package com.sony.dolby;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import com.sony.settings.dolby.DolbyUtils;
+import com.sony.dolby.DolbyUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 

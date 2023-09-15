@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.sony.settings.dolby;
+package com.sony.dolby;
 
 import android.content.Context;
 import android.content.Intent;

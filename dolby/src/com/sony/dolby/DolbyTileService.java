@@ -1,4 +1,4 @@
-package com.sony.settings.dolby;
+package com.sony.dolby;
 
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;

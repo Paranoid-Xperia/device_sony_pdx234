@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.sony.settings.dolby;
+package com.sony.dolby;
 
 import android.app.Activity;
 import android.content.Context;
@@ -33,7 +33,7 @@ import androidx.preference.SwitchPreference;
 import com.android.settingslib.widget.MainSwitchPreference;
 import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
-import com.sony.settings.R;
+import com.sony.dolby.R;
 
 public class DolbySettingsFragment extends PreferenceFragment implements
         OnPreferenceChangeListener, OnMainSwitchChangeListener {
