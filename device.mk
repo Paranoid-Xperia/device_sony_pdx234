@@ -225,7 +225,7 @@ PRODUCT_PACKAGES += \
 
 # Neural Networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks-V1-ndk_platform.vendor
+    android.hardware.neuralnetworks-V1-ndk.vendor
 
 # RenderScript
 PRODUCT_PACKAGES += \
