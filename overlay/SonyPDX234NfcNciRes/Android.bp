@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "SonyPDX234NfcNciRes",
-    device_specific: true,
+    product_specific: true,
 }

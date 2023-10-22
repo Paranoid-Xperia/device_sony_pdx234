@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "SonyPDX234SystemUIRes",
-    device_specific: true,
+    product_specific: true,
 }
