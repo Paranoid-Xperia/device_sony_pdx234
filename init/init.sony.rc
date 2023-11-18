@@ -1,0 +1,111 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service msim_sh /odm/bin/init.qcom.msim.sh
+    user root
+    group root
+    oneshot
+
+on boot
+    # Enable smart charging
+    wait /sys/class/battchg_ext/smart_charging_activation
+    write /sys/class/battchg_ext/smart_charging_activation 1
+    chown system system /sys/class/battchg_ext/smart_charging_interruption
+
+    # Set up permission for touch framerate node
+    chown system system /sys/devices/virtual/input/lxs_ts_input/frame_rate_np
+
+    # Set up permission for dt2w nodes
+    chown system system /sys/devices/virtual/input/lxs_ts_input/enable_knock
+    chown system system /sys/devices/dsi_panel_driver/pre_sod_mode
+
+on post-fs
+    # radio
+    exec_start msim_sh
+    setprop persist.radio.multisim.config ${vendor.radio.multisim.config}
+    setprop ro.vendor.ltalabel.model ${vendor.radio.ltalabel.model}
+
+on property:ro.vendor.ltalabel.model=XQ-BC72
+    setprop ro.vendor.product.rf.id PDX234-C2
+
+on property:ro.vendor.ltalabel.model=XQ-BC62
+    setprop ro.vendor.product.rf.id PDX234-A2US
+
+on property:ro.vendor.ltalabel.model=XQ-BC52
+    setprop ro.vendor.product.rf.id PDX234-A2
+
+on property:ro.vendor.ltalabel.model=XQ-BC42
+    setprop ro.vendor.product.rf.id PDX234-J2
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:ro.vendor.ltalabel.model=XQ-BQ72
+    setprop ro.vendor.product.rf.id PDX214-C2
+
+on property:ro.vendor.ltalabel.model=XQ-BQ62
+    setprop ro.vendor.product.rf.id PDX214-A2US
+
+on property:ro.vendor.ltalabel.model=XQ-BQ52
+    setprop ro.vendor.product.rf.id PDX214-A2
+
+on property:ro.vendor.ltalabel.model=XQ-BQ42
+    setprop ro.vendor.product.rf.id PDX214-J2
+    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
+
+on property:ro.vendor.ltalabel.model=XQ-DQ72
+    setprop ro.vendor.product.rf.id pdx234-C2
+
+# USB config, refer to init.sony.usb.rc
+on property:sys.usb.config=adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x320D
+
+on property:sys.usb.config=mass_storage && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x020D
+
+on property:sys.usb.config=mtp && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x020D
+
+on property:sys.usb.config=mtp,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x520D
+
+on property:sys.usb.config=ptp && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0xA20D
+
+on property:sys.usb.config=ptp,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0xB20D
+
+on property:sys.usb.config=rndis,none && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x720D
+
+on property:sys.usb.config=rndis,serial_cdev,diag && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x020D
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x020D
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=diag,diag_mdm,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x020D
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=mass_storage,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x520D
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,diag,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x020D
+
+on property:sys.usb.ffs.ready=1 && property:sys.usb.config=rndis,none,adb && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/idVendor 0x0FCE
+    write /config/usb_gadget/g1/idProduct 0x020D
