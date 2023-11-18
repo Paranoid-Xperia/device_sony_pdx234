@@ -188,6 +188,18 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    CarrierConfigRes \
+    SonyPDX234NfcNciRes \
+    SonyPDX234FrameworksRes \
+    SonyPDX234SettingsProviderOverlay \
+    SonyPDX234SettingsRes \
+    SonyPDX234SystemUIRes \
+    SonyPDX234TelephonyRes \
+    WifiRes
+
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-V1-ndk_platform.vendor
