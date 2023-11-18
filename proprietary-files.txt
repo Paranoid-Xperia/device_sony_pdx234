@@ -1,4 +1,4 @@
-# Stock package version: XQ-DQ72_Customized HK_67.0.A.4.104
+# Stock package version: XQ-DQ54_Customized EU_67.1.A.2.112
 
 # ACDBs
 vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
@@ -331,13 +331,13 @@ vendor/camera/LGI12BC0/raw_proc_platform.dat
 vendor/camera/LGI12BC0/recognize_map_comp.dat
 vendor/camera/LGI12BC0/scene_detector.dat
 vendor/camera/MAUNAKEA_FW_DATA_1_0x16903000.dat
-vendor/camera/MAUNAKEA_FW_DATA_1_0x16903010.dat
+vendor/camera/MAUNAKEA_FW_DATA_1_0x16903040.dat
 vendor/camera/MAUNAKEA_FW_DATA_2_0x16903000.dat
-vendor/camera/MAUNAKEA_FW_DATA_2_0x16903010.dat
+vendor/camera/MAUNAKEA_FW_DATA_2_0x16903040.dat
 vendor/camera/MAUNAKEA_FW_DATA_4_0x16903000.dat
-vendor/camera/MAUNAKEA_FW_DATA_4_0x16903010.dat
+vendor/camera/MAUNAKEA_FW_DATA_4_0x16903040.dat
 vendor/camera/MAUNAKEA_FW_DATA_5_0x16903000.dat
-vendor/camera/MAUNAKEA_FW_DATA_5_0x16903010.dat
+vendor/camera/MAUNAKEA_FW_DATA_5_0x16903040.dat
 vendor/camera/Morpho/CLBokeh/MorphoBokeh.bin.89ec02e
 vendor/camera/Morpho/CLBokeh/MorphoFormatUtil.bin.347db6fd
 vendor/camera/Morpho/Halide/halide_13831235
@@ -444,7 +444,6 @@ vendor/camera/SUN12BS0/raw_proc_platform.dat
 vendor/camera/SUN12BS0/recognize_map_comp.dat
 vendor/camera/SUN12BS0/scene_detector.dat
 vendor/camera/default.dat
-vendor/camera/depth.dat
 vendor/camera/display_ctrl.dat
 vendor/camera/file_animal_eye_detector.dat
 vendor/camera/file_autoexposure.dat
@@ -1059,6 +1058,7 @@ system_ext/lib64/libdpmfdmgr.so
 system_ext/lib64/libdpmframework.so
 system_ext/lib64/libdpmtcm.so
 system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so
+system_ext/lib64/vendor.qti.hardware.dpmaidlservice-V1-ndk.so
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/bin/vendor.dpmd
@@ -1225,9 +1225,9 @@ vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
 # eUICC
+product/etc/permissions/jp.co.sony.mc.euiccmemoryreset.xml
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
-system_ext/etc/permissions/jp.co.sony.mc.euiccmemoryreset.xml
-system_ext/priv-app/EuiccMemoryReset/EuiccMemoryReset.apk;PRESIGNED
+product/priv-app/EuiccMemoryReset/EuiccMemoryReset.apk;PRESIGNED
 
 # ExtLight
 vendor/bin/hw/vendor.semc.hardware.extlight-service.somc
@@ -1248,11 +1248,13 @@ vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc
+vendor/etc/vintf/manifest/vendor.egistec.hardware.fingerprint.xml
 vendor/lib64/hw/bix.fingerprint.default.so
 vendor/lib64/libRbsFlow.so
 vendor/lib64/libets_teeclient_v2.so
 vendor/lib64/libree_bix_agent.so
 vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
+vendor/lib64/vendor.semc.hardware.fingerprint-V1-ndk_platform.so
 
 # Fingerprint firmware
 vendor/firmware/egisap.mbn
@@ -2012,6 +2014,8 @@ lib/vendor.somc.hardware.miscta@1.0.so:vendor/lib/vendor.somc.hardware.miscta@1.
 lib64/vendor.somc.hardware.miscta@1.0.so:vendor/lib64/vendor.somc.hardware.miscta@1.0.so
 system/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
 system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
+system_ext/etc/permissions/jp.co.sony.mc.misctasdklibrary.xml
+system_ext/framework/jp.co.sony.mc.misctasdklibrary.jar
 vendor/bin/hw/vendor.semc.hardware.secd@1.1-service
 vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service
 vendor/etc/init/init.taqmi.rc
