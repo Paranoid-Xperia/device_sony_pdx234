@@ -39,13 +39,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.qcom.rc",
-    filename: "ueventd.rc",
-    src: "ueventd.rc",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "ueventd.sony.rc",
     filename: "ueventd.rc",
     src: "ueventd.sony.rc",

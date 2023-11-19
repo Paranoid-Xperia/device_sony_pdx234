@@ -159,7 +159,6 @@ PRODUCT_PACKAGES += \
     init.sony-platform.rc \
     init.sony.rc \
     init.target.rc \
-    ueventd.rc \
     ueventd.sony.rc
 
 PRODUCT_COPY_FILES += \
