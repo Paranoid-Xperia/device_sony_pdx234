@@ -143,9 +143,6 @@ TARGET_KERNEL_EXT_MODULES := \
     sony/sony_camera \
     sony/lxs_ts
 
-# Kernel Modules
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PREBUILT_DIR)/modules.load.recovery))
-
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
