@@ -19,6 +19,7 @@ $(call inherit-product, vendor/sony/pdx234/pdx234-vendor.mk)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+    hardware/sony
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
