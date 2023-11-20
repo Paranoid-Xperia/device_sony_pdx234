@@ -69,9 +69,8 @@ BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/configs/vintf/framework_matrix_sony.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+    $(DEVICE_PATH)/configs/vintf/framework_matrix_sony.xml
+
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/vintf/manifest_kalama.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_sony.xml
@@ -136,8 +135,6 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/properties/system_ext.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
