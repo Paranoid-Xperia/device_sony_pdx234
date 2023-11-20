@@ -61,7 +61,9 @@ function blob_fixup() {
          vendor/lib64/libqtikeymint.so)
             "${PATCHELF}" --add-needed android.hardware.security.rkp-V3-ndk.so "${2}"
             ;;
-
+        vendor/bin/slim_daemon)
+            ${PATCHELF} --add-needed libc++_shared.so "${2}"
+            ;;
     esac
 }
 
