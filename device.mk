@@ -18,7 +18,7 @@ $(call inherit-product, vendor/sony/pdx234/pdx234-vendor.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
     hardware/sony
 
 # AAPT
@@ -166,7 +166,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
 # Kernel
-KERNEL_PREBUILT_DIR := $(DEVICE_PATH)-kernel
+KERNEL_PREBUILT_DIR := device/sony/pdx234-kernel
 
 # Keymaster
 PRODUCT_PACKAGES += \
