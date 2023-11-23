@@ -32,6 +32,7 @@ bool setDeviceSpecificFeature(Feature feature, bool enabled) {
             ::android::base::WriteStringToFile(enabled ? "1" : "0",
                                                "/sys/devices/dsi_panel_driver/pre_sod_mode");
             return true;
+        }
         default:
             return false;
     }
