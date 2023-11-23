@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
     init.target.rc \
     init.sony-device-common.rc \
     init.sony-platform.rc \
