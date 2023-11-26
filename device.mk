@@ -257,6 +257,15 @@ include $(LOCAL_PATH)/properties.mk
 PRODUCT_PACKAGES += \
     libjson
 
+# Sony Display interface
+PRODUCT_PACKAGES += \
+    vendor.semc.hardware.display@2.0.vendor \
+    vendor.semc.hardware.display@2.1.vendor \
+    vendor.semc.hardware.display@2.2.vendor \
+    vendor.semc.hardware.display@2.3.vendor \
+    vendor.semc.hardware.display@2.4.vendor \
+    vendor.semc.hardware.display@2.5.vendor
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
