@@ -54,6 +54,9 @@ vendor.display.enable_rc_support=1 \
 vendor.gralloc.disable_ubwc=0 \
 vendor.gralloc.enable_logs=0
 
+PRODUCT_SYSTEM_PROPERTIES += \
+debug.sf.latch_unsignaled=1
+
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.dpm.vndr.idletimer.mode=default \
@@ -71,6 +74,21 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Fuse
 PRODUCT_VENDOR_PROPERTIES += \
 persist.sys.fuse.passthrough.enable=true
+
+# Graphics
+PRODUCT_VENDOR_PROPERTIES += \
+ro.hardware.egl=adreno \
+ro.hardware.vulkan=adreno \
+ro.opengles.version=196610 \
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
+ro.surface_flinger.has_HDR_display=true \
+ro.surface_flinger.has_wide_color_display=true \
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+ro.surface_flinger.max_virtual_display_dimension=4096 \
+ro.surface_flinger.protected_contents=true \
+ro.surface_flinger.use_content_detection_for_refresh_rate=true \
+ro.surface_flinger.use_color_management=true \
+ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # Gatekeeper
 PRODUCT_VENDOR_PROPERTIES += \
@@ -99,7 +117,3 @@ ro.mediaserver.64b.enable=true
 # NFC
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.camera.notify_nfc=1
-
-# Renderer
-PRODUCT_SYSTEM_PROPERTIES += \
-debug.hwui.renderer=skiavk
