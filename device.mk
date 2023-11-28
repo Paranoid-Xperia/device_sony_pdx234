@@ -229,6 +229,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigRes \
     SonyPDX234NfcNciRes \
     SonyPDX234FrameworksRes \
+    PDX234FrameworksAOSPA \
     SonyPDX234SettingsProviderOverlay \
     SonyPDX234SettingsRes \
     SonyPDX234SystemUIRes \
