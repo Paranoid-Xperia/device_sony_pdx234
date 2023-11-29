@@ -280,6 +280,7 @@ PRODUCT_PACKAGES += \
     SonyPDX234SettingsRes \
     SonyPDX234SystemUIRes \
     SonyPDX234TelephonyRes \
+    WifiResTargetMainline \
     WifiRes
 
 # Neural Networks
