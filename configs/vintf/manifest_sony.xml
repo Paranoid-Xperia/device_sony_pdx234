@@ -13,6 +13,16 @@
         </interface>
         <fqname>@2.1::IBiometricsFingerprint/default</fqname>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.pal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IPAL</name>
+            <instance>default</instance>
+        <fqname>@1.0::IPAL/default</fqname>
+        </interface>
+    </hal>
     <hal format="hidl">
         <name>vendor.qti.sla.service</name>
         <transport>hwbinder</transport>
