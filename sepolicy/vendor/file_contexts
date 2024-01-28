@@ -17,7 +17,6 @@
 /mnt/idd/startup-prober(/.*)?             u:object_r:startupprober_file:s0
 /data/vendor/3dra(/.*)?                   u:object_r:vendor_audio_data_file:s0
 
-
 # HALs
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/android\.hardware\.lights-service\.sony_edo                   u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.semc\.hardware\.display@(.*)?                         u:object_r:hal_disp_default_exec:s0
@@ -49,6 +48,7 @@
 
 # Shell scripts
 /(vendor|system/vendor|odm|vendor/odm)/bin/init\.qcom\.msim\.sh        u:object_r:init-qcom-msim-sh_exec:s0
+/(vendor|system/vendor)/bin/init\.sony-perf\.sh                          u:object_r:vendor_qti_init_shell_exec:s0
 
 # Sys files
 /sys/devices/virtual/sec/tsp(/.*)?                              u:object_r:sysfs_tsp:s0

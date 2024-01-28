@@ -194,6 +194,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.sony-device-common.rc \
     init.sony-platform.rc \
+    init.sony-perf.sh \
     init.sony.rc \
     init.target.rc \
     ueventd.sony.rc
