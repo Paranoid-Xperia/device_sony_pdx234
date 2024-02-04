@@ -196,7 +196,7 @@ service fan_control_turn_off /vendor/bin/fan_service 0
     disabled
     oneshot
 
-service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service_64
     override
     class hal
     user audioserver
