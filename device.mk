@@ -182,6 +182,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.kalama.post_boot.sh \
     init.target.rc \
     init.sony-device-common.rc \
     init.sony-platform.rc \
