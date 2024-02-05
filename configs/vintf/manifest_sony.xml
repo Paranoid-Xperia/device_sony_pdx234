@@ -23,6 +23,16 @@
         <fqname>@1.0::IPAL/default</fqname>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.AGMIPC</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IAGM</name>
+            <instance>default</instance>
+        <fqname>@1.0::IAGM/default</fqname>
+        </interface>
+    </hal>
     <hal format="hidl">
         <name>vendor.qti.sla.service</name>
         <transport>hwbinder</transport>
