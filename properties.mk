@@ -85,9 +85,6 @@ persist.sys.fuse.passthrough.enable=true
 
 # Graphics
 PRODUCT_VENDOR_PROPERTIES += \
-ro.hardware.egl=adreno \
-ro.hardware.vulkan=adreno \
-ro.opengles.version=196610 \
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
 ro.surface_flinger.has_HDR_display=true \
 ro.surface_flinger.has_wide_color_display=true \
