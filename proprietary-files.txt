@@ -994,6 +994,7 @@ vendor/lib64/libgrallocutils.so
 # Display (HDR)
 vendor/lib64/libhdr_backlight_adapter.so
 vendor/lib64/libhdr_tm.so
+vendor/etc/libhdr_somc.xml
 
 # Display (HWC)
 vendor/bin/hw/vendor.qti.hardware.display.composer-service
