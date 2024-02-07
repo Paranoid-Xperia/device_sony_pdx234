@@ -1,3 +1,11 @@
+# Audio
+PRODUCT_VENDOR_PROPERTIES += \
+vendor.audio.feature.custom_stereo.enable=true \
+vendor.audio.feature.display_port.enable=true \
+vendor.audio.feature.hdmi_edid.enable=true \
+vendor.audio.feature.hdmi_passthrough.enable=true \
+vendor.audio.enable.cirrus.speaker=true
+
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \
 persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
