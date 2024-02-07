@@ -311,6 +311,10 @@ PRODUCT_PACKAGES += \
 # Properties
 include $(LOCAL_PATH)/properties.mk
 
+# Powershare
+PRODUCT_PACKAGES += \
+    vendor.aospa.powershare-service
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson

@@ -174,6 +174,9 @@ TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
+# PowerShare
+TARGET_POWERSHARE_NODE := /sys/class/qcom-battery/wireless_boost_en
+
 # Power
 TARGET_POWER_FEATURE_EXT_LIB := //$(DEVICE_PATH):libpowerfeature_ext_yodo
 
