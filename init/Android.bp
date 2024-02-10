@@ -11,8 +11,8 @@ prebuilt_etc {
 }
 
 sh_binary {
-    name: "init.kalama.post_boot.sh",
-    src: "init.kalama.post_boot.sh",
+    name: "init.lahaina.post_boot.sh",
+    src: "init.lahaina.post_boot.sh",
     sub_dir: "init",
     vendor: true,
 }
