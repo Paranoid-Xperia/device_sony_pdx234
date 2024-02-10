@@ -79,7 +79,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wlan
 
 TARGET_USE_AIDL_QTI_BT_AUDIO := true
-TARGET_USE_AIDL_QTI_HEALTH := true
 
 # Shipping API level
 BOARD_API_LEVEL := 33
@@ -176,8 +175,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery \
-    android.hardware.health@1.0.vendor \
-    android.hardware.health@2.1.vendor
+    android.hardware.health@1.0.vendor
 
 # Identity
 PRODUCT_PACKAGES += \
