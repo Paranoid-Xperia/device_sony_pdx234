@@ -317,11 +317,6 @@ PRODUCT_PACKAGES += \
 
 # Sony Display interface
 PRODUCT_PACKAGES += \
-    vendor.semc.hardware.display@2.0.vendor \
-    vendor.semc.hardware.display@2.1.vendor \
-    vendor.semc.hardware.display@2.2.vendor \
-    vendor.semc.hardware.display@2.3.vendor \
-    vendor.semc.hardware.display@2.4.vendor \
     vendor.semc.hardware.display@2.5.vendor
 
 # Sensors
@@ -378,5 +373,4 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac_vendor
+    libnl
