@@ -315,6 +315,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# Sony Charger interface
+PRODUCT_PACKAGES += \
+    vendor.sony.charger \
+    vendor.sony.charger-service
+
 # Sony Display interface
 PRODUCT_PACKAGES += \
     vendor.semc.hardware.display@2.5.vendor
