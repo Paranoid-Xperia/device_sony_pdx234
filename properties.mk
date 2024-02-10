@@ -80,7 +80,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Fuse
-PRODUCT_VENDOR_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
 persist.sys.fuse.passthrough.enable=true
 
 # Graphics
