@@ -156,6 +156,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     libdrm.vendor
 
+# Dummy sony packages
+PRODUCT_PACKAGES += \
+    com.sony.idd_dummy \
+    com.sony.device
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
