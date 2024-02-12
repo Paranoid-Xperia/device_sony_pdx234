@@ -380,3 +380,11 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
+
+# Xperia Modules
+include hardware/sony/XperiaModules.mk
+
+TARGET_SUPPORTS_CREATOR_MODE := true
+TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
+TARGET_SUPPORTS_BATTERY_CARE := true
+TARGET_SUPPORTS_EUICC := true
