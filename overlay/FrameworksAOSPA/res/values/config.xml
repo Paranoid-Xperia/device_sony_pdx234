@@ -20,4 +20,5 @@
     <integer name="config_doubleTapDefault">1</integer>
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/qcom-battery/fastchg_mode</string>
+<string name="config_stockFingerprint" translatable="false">Sony/XQ-DQ72/XQ-DQ72:14/67.1.A.2.112/067001A002011200521143226:user/release-keys</string>
 </resources>
