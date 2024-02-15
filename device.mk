@@ -239,15 +239,12 @@ endif
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.2.vendor \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libcodec2_soft_common.vendor \
-    libcodec2_hidl@1.2.vendor \
+    libavservices_minijail_vendor \
+    libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
-    libgui_vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libstagefrighthw
+    libpalclient
 
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.media.omx=0
