@@ -1051,6 +1051,7 @@ vendor/bin/hw/vendor.semc.hardware.display@2.5-service
 vendor/etc/init/vendor.semc.hardware.display@2.5-service.rc
 
 # Display calibration data
+vendor/etc/display/qdcm_calib_data_1.json
 vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json
