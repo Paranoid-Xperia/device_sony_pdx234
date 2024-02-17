@@ -246,9 +246,6 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libpalclient
 
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.media.omx=0
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_performance_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama.xml \
     $(LOCAL_PATH)/media/media_codecs_performance_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama_vendor.xml \
