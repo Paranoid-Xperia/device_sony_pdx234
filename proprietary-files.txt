@@ -161,6 +161,7 @@ vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/liblx-ar_util.so
 -vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
+vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/libvui_dmgr.so
 vendor/lib64/libvui_dmgr_client.so
@@ -169,7 +170,15 @@ vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 
 # Audio AGM
+vendor/bin/agmcap
+vendor/bin/agmcompressplay
+vendor/bin/agmplay
 -vendor/lib64/libagm.so
+vendor/lib64/libagm_compress_plugin.so
+vendor/lib64/libagm_mixer_plugin.so
+vendor/lib64/libagm_pcm_plugin.so
+vendor/lib64/libagmclient.so
+vendor/lib64/libagmmixer.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio FX modules
@@ -1207,6 +1216,7 @@ vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblocdiagiface.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
+vendor/lib64/libpal_net_if.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsys_info_cache.so

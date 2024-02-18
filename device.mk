@@ -91,14 +91,7 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-V2-ndk.vendor \
-    agmcap \
-    agmcompressplay \
-    agmplay \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libpalclient
+    android.hardware.bluetooth.audio-V2-ndk.vendor
 
 # Audio Policies
 PRODUCT_COPY_FILES += \
