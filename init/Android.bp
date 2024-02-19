@@ -50,14 +50,3 @@ sh_binary {
     src: "init.sony-perf.sh",
     vendor: true,
 }
-
-cc_library_static {
-    name: "libinit_pdx234",
-    srcs: ["init_pdx234.cpp"],
-    recovery_available: true,
-    whole_static_libs: ["libbase"],
-    include_dirs: [
-        "system/libbase/include",
-        "system/core/init"
-    ]
-}
