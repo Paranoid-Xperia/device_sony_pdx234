@@ -60,6 +60,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-sony.service.cs40l25
 
+# WIFI
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini
+
 # QTI components
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
