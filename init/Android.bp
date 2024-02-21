@@ -44,9 +44,3 @@ prebuilt_etc {
     src: "ueventd.sony.rc",
     device_specific: true,
 }
-
-sh_binary {
-    name: "init.sony-perf.sh",
-    src: "init.sony-perf.sh",
-    vendor: true,
-}
