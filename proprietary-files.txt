@@ -129,7 +129,6 @@ vendor/lib/rfsa/adsp/libvpt_action_recognition.so
 vendor/lib/rfsa/adsp/libworker_pool.so
 
 # ANT+
-system_ext/lib/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
@@ -975,11 +974,9 @@ vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
-vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Diag
-system_ext/lib/vendor.qti.diaghal@1.0.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
@@ -1001,7 +998,6 @@ vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/snapdragon_color_libs_config.xml
--vendor/lib/libvmmem.so
 vendor/lib64/libbacklight-calib.so
 vendor/lib64/libdigital-dimming.so
 vendor/lib64/libdpps.so
@@ -1136,8 +1132,6 @@ vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
 # FM
-system_ext/lib/fm_helium.so
-system_ext/lib/libfm-hci.so
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
@@ -1227,7 +1221,6 @@ vendor/lib64/vendor.qti.gnss-service.so
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # Graphics (Adreno firmware)
@@ -1255,8 +1248,6 @@ vendor/etc/init/init.sony.idd.rc
 vendor/etc/init/vendor.semc.system.idd@1.1-service.rc
 vendor/etc/security/idd_config.pem
 vendor/etc/security/idd_report.pem
-vendor/lib/libidd.so
-vendor/lib/vendor.semc.system.idd@1.0.so
 vendor/lib64/libidd.so
 vendor/lib64/libprotobuf-c-idd.so
 vendor/lib64/vendor.semc.system.idd@1.0.so
@@ -1359,8 +1350,6 @@ vendor/lib64/vendor.qti.hardware.limits@1.2.so
 
 # Media
 odm/etc/media_profiles_V1_0.xml
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 vendor/bin/hw/qconfigservice
@@ -1473,7 +1462,6 @@ vendor/lib64/libpdnotifier.so
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # QCC
@@ -1612,7 +1600,6 @@ vendor/etc/vintf/manifest/qms-saidl.xml
 vendor/etc/vintf/manifest/qtiradio-saidl.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.radio.am.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml
-vendor/lib/libqrtr.so
 vendor/lib64/deviceInfoServiceModuleNr.so
 vendor/lib64/lib-qhcpservice.so
 vendor/lib64/libQtiRilLoadable.so
@@ -1737,9 +1724,7 @@ vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 
 # Secd
-lib/vendor.somc.hardware.miscta@1.0.so:vendor/lib/vendor.somc.hardware.miscta@1.0.so
 lib64/vendor.somc.hardware.miscta@1.0.so:vendor/lib64/vendor.somc.hardware.miscta@1.0.so
-system/lib/libMiscTaWrapper.so:vendor/lib/libMiscTaWrapper.so
 system/lib64/libMiscTaWrapper.so:vendor/lib64/libMiscTaWrapper.so
 system_ext/etc/permissions/jp.co.sony.mc.misctasdklibrary.xml
 system_ext/framework/jp.co.sony.mc.misctasdklibrary.jar
@@ -1748,9 +1733,6 @@ vendor/bin/hw/vendor.somc.hardware.miscta@1.0-service
 vendor/etc/init/init.taqmi.rc
 vendor/etc/init/vendor.semc.hardware.secd@1.1-service.rc
 vendor/etc/init/vendor.somc.hardware.miscta@1.0-service.rc
-vendor/lib/libdevice_security_vendor.so
-vendor/lib/libmiscta.so
-vendor/lib/vendor.somc.hardware.security.secd@1.1.so
 vendor/lib64/libdevice_security_vendor.so
 vendor/lib64/libifaa.so
 vendor/lib64/libmiscta.so
@@ -1866,20 +1848,11 @@ vendor/lib64/libsnsdiaglog.so
 vendor/lib64/sensors.ssc.so
 
 # Snapdragon Computer Vision Engine
-vendor/lib/libfastcvdsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libscveCommon.so
-vendor/lib/libscveCommon_stub.so
-vendor/lib/libscveObjectSegmentation.so
-vendor/lib/libscveObjectSegmentation_stub.so
-vendor/lib/libscveObjectTracker.so
-vendor/lib/libscveObjectTracker_stub.so
 vendor/lib64/libfastcvopt.so
 
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
@@ -1890,7 +1863,6 @@ vendor/lib64/vendor.somc.hardware.aidlmiscta-V1-ndk_platform.so
 
 # TA QMI
 vendor/bin/ta_qmi_service
-vendor/lib/libta.so
 vendor/lib64/libta.so
 
 # TA daemon
@@ -1903,9 +1875,6 @@ vendor/etc/init/vendor.qti.tftp.rc
 # Thermal engine
 vendor/bin/thermal-engine-v2|b60f5ed4b79da2091970d24f97074ce2b619969b
 vendor/etc/init/init_thermal-engine-v2.rc
-vendor/lib/libsomc_thermal.so
-vendor/lib/libthermal_engine.so
-vendor/lib/libthermalclient.so
 vendor/lib64/liblights-core.so
 vendor/lib64/liblmthermallistner.so
 vendor/lib64/libsys-utils.so
@@ -1917,7 +1886,6 @@ vendor/lib64/vendor.semc.hardware.thermal@1.0.so
 vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
-vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
 # Trimarea
@@ -2038,8 +2006,6 @@ vendor/lib64/libwvaidl.so
 vendor/etc/disp_color_conf.xml
 vendor/etc/disp_panel_conf.xml
 vendor/etc/seccomp_policy/qms.policy
-vendor/lib/libclstc_algorithm_adapter.so
-vendor/lib/libclstc_hdr.so
 vendor/lib64/jcos_nq_client.so
 vendor/lib64/libSnpeHtpV73Stub.so
 vendor/lib64/libSonyDisplayProperties.so
