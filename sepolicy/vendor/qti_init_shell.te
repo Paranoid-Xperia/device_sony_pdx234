@@ -1,0 +1,2 @@
+allow vendor_qti_init_shell sysfs_powershare:file { setattr };
+allow vendor_qti_init_shell sysfs_battchg_ext:file { setattr };
