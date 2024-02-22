@@ -2050,9 +2050,4 @@ vendor/firmware/cs40l25a_cal.wmfw
 vendor/firmware/touch_module_id_0x01.img
 
 # Wifi firmware
-vendor/etc/wifi/bdwlan.e17
-vendor/etc/wifi/bdwlan.e30
-vendor/etc/wifi/bdwlan.e31
-vendor/etc/wifi/regdb.bin
-vendor/etc/wifi/wifi_txpower.conf
 vendor/etc/wifi/wpa_supplicant.conf
