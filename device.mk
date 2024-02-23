@@ -195,7 +195,6 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    fstab.zram \
     init.target.rc \
     init.sony-device-common.rc \
     init.sony-platform.rc \

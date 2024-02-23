@@ -126,9 +126,3 @@ vendor.media.omx=0
 # NFC
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.camera.notify_nfc=1
-
-# ZRAM
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-ro.zram.mark_idle_delay_mins=60 \
-ro.zram.first_wb_delay_mins=1440 \
-ro.zram.periodic_wb_delay_hours=24
