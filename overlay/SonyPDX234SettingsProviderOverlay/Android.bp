@@ -5,6 +5,6 @@
 
 runtime_resource_overlay {
     name: "SonyPDX234SettingsProviderOverlay",
-    product_specific: true,
+    device_specific: true,
 }
 
