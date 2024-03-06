@@ -148,11 +148,6 @@ debug.hwui.renderer=skiavk
 PRODUCT_VENDOR_PROPERTIES += \
 debug.renderengine.backend=skiavkthreaded
 
-# Sony Wifi-6E props
-PRODUCT_VENDOR_PROPERTIES += \
-ro.vendor.product.rf.id=pdx234-A4 \
-ro.vendor.sony.wlan.6e_cc_list=AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LI,LT,LU,MT,NL,NO,PL,PT,RO,SK,SI,ES,SE,G>ro.oem_ant_switch_index_table=10,12,12,12,10,12,12,12,12,12,12,12,12,12,12,12,10,12,12,12,10,12,12,12,12,12,12,12,12,12>ro.oem_sar_back_off_index_table=1,3,8,1,6,3,8,1,5,3,8,1,5,3,8,1,1,3,8,1,6,3,8,1,5,3,8,1,5,3,8,1
-
 # OEM Unlock reporting
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
