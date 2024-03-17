@@ -1001,7 +1001,6 @@ vendor/etc/snapdragon_color_libs_config.xml
 vendor/lib64/libbacklight-calib.so
 vendor/lib64/libdigital-dimming.so
 vendor/lib64/libdpps.so
-vendor/lib64/libgame_enhance.so
 vendor/lib64/libhistogram.so
 vendor/lib64/libmemutils.so
 vendor/lib64/libqdcm-algo.so
@@ -1540,7 +1539,6 @@ vendor/lib64/libqape_oem_ext.so
 # QSPM
 vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
-vendor/etc/seccomp_policy/qspm.policy
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
