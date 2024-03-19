@@ -149,5 +149,5 @@ PRODUCT_VENDOR_PROPERTIES += \
 debug.renderengine.backend=skiavkthreaded
 
 # OEM Unlock reporting
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.oem_unlock_supported=1
+# PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+#    ro.oem_unlock_supported=1
