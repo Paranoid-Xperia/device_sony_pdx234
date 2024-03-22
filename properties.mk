@@ -55,7 +55,6 @@ vendor.display.enable_async_powermode=0 \
 vendor.display.enable_async_vds_creation=1 \
 vendor.display.enable_dpps_dynamic_fps=1 \
 vendor.display.enable_early_wakeup=1 \
-vendor.display.enable_optimize_refresh=0 \
 vendor.display.vds_allow_hwc=1 \
 vendor.display.disable_rounded_corner=1 \
 vendor.display.enable_rc_support=1 \
