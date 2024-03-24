@@ -4,7 +4,9 @@ persist.vendor.display.libhdr.enable_dyn_tm  u:object_r:vendor_display_color_pro
 persist.vendor.display.opec_mode             u:object_r:vendor_display_color_prop:s0
 persist.vendor.display.pcc_matrix            u:object_r:vendor_display_color_prop:s0
 persist.vendor.display.sspp_color_mode       u:object_r:vendor_display_color_prop:s0
+persist.vendor.vibrator.hal.                 u:object_r:vendor_vibrator_prop:s0
 ro.vendor.product.rf.id                      u:object_r:vendor_radio_prop:s0
+ro.vendor.vibrator.hal.                      u:object_r:vendor_vibrator_prop:s0
 vendor.backlight_on                          u:object_r:vendor_display_prop:s0
 vendor.camera.running_status                 u:object_r:vendor_camera_running_status_prop:s0
 vendor.camera.sensor.                        u:object_r:vendor_camera_sensor_prop:s0
