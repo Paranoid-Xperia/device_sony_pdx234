@@ -10,6 +10,8 @@ allow nv_updater vendor_data_file:file rw_file_perms;
 allow nv_updater nvconfig_file_type:dir rw_dir_perms;
 allow nv_updater nvconfig_file_type:file create_file_perms;
 
+# Allow nv_updater to connect to tad
 unix_socket_connect(nv_updater, tad, tad)
 
+# Allow nv_updater to read radio properties
 get_prop(nv_updater, vendor_radio_prop)
