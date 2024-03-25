@@ -1,0 +1,20 @@
+//
+// Copyright (C) 2017-2021 The LineageOS Project
+//           (C) 2024 Paranoid Android
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "XperiaParts",
+
+    srcs: ["src/**/*.java"],
+    certificate: "platform",
+    platform_apis: true,
+    system_ext_specific: true,
+    privileged: true,
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}

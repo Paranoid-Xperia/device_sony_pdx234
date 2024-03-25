@@ -279,6 +279,7 @@ PRODUCT_PACKAGES += \
     SonyPDX234FrameworksRes \
     PDX234FrameworksAOSPA \
     SonyPDX234SettingsProviderOverlay \
+    SonyPDX234SettingsOverlay \
     SonyPDX234SettingsRes \
     SonyPDX234SystemUIRes \
     SonyPDX234TelephonyRes \
@@ -395,6 +396,10 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
+
+# Xperia Parts
+PRODUCT_PACKAGES += \
+    XperiaParts
 
 # Xperia Modules
 include hardware/sony/XperiaModules.mk
