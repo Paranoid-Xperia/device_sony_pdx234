@@ -274,7 +274,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
-    CarrierConfigRes \
+    SonyPDX234CarrierConfigRes \
     SonyPDX234NfcNciRes \
     SonyPDX234FrameworksRes \
     SonyPDX234FrameworksAOSPA \
@@ -284,8 +284,8 @@ PRODUCT_PACKAGES += \
     SonyPDX234SettingsRes \
     SonyPDX234SystemUIRes \
     SonyPDX234TelephonyRes \
-    WifiResTargetMainline \
-    WifiRes
+    SonyPDX234WifiResMainline \
+    SonyPDX234WifiRes
 
 # Neural Networks
 PRODUCT_PACKAGES += \

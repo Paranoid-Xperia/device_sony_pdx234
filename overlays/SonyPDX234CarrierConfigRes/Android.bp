@@ -4,7 +4,7 @@
 //
 
 runtime_resource_overlay {
-    name: "CarrierConfigRes",
+    name: "SonyPDX234CarrierConfigRes",
     aaptflags: ["--keep-raw-values"],
-    product_specific: true,
+    device_specific: true,
 }
