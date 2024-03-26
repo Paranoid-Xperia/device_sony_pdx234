@@ -142,9 +142,10 @@ ro.oem_sar_back_off_index_table=1,3,8,1,6,3,8,1,5,3,8,1,5,3,8,1,1,3,8,1,6,3,8,1,
 
 # Renderer
 PRODUCT_SYSTEM_PROPERTIES += \
-debug.hwui.renderer=skiagl \
-debug.renderengine.backend=skiaglthreaded \
-renderthread.skia.reduceopstasksplitting=true
+debug.hwui.renderer=skiavk
+
+PRODUCT_VENDOR_PROPERTIES += \
+debug.renderengine.backend=skiavkthreaded
 
 # OEM Unlock reporting
 # PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
