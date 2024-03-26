@@ -163,7 +163,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
-BOARD_AVB_KEY_PATH := device/sony/keys/priv.key
+BOARD_AVB_KEY_PATH := device/sony/keys/releasekey.pk8
 BOARD_AVB_ALGORITHM := SHA512_RSA4096
 #BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
