@@ -102,7 +102,7 @@ TARGET_HAS_GENERIC_KERNEL_HEADERS := true
 KERNEL_PREBUILT_DIR := device/sony/pdx234-kernel
 
 # Kernel modules
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PREBUILT_DIR)/modules.load.recovery))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PREBUILT_DIR)/vendor_ramdisk/modules.load.recovery))
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
