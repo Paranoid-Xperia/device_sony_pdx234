@@ -1,0 +1,17 @@
+type threesixtyra_app, domain, appdomain, netdomain, coredomain;
+
+allow threesixtyra_app audio_service:service_manager find;
+allow threesixtyra_app audioserver_service:service_manager find;
+allow threesixtyra_app activity_service:service_manager find;
+allow threesixtyra_app bluetooth_manager_service:service_manager find;
+allow threesixtyra_app content_capture_service:service_manager find;
+allow threesixtyra_app game_service:service_manager find;
+allow threesixtyra_app media_router_service:service_manager find;
+allow threesixtyra_app netstats_service:service_manager find;
+allow threesixtyra_app permission_checker_service:service_manager find;
+allow threesixtyra_app thermal_service:service_manager find;
+allow threesixtyra_app tethering_service:service_manager find;
+allow threesixtyra_app virtual_device_service:service_manager find;
+
+allow threesixtyra_app threesixtyra_vendor_data_file:dir rw_dir_perms;
+allow threesixtyra_app threesixtyra_vendor_data_file:file create_file_perms;

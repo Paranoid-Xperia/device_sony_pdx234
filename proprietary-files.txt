@@ -1060,6 +1060,40 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
+# Dolby
+system_ext/etc/permissions/com.dolby.daxservice.xml
+system_ext/lib64/vendor.dolby.hardware.dms@2.0.so
+system_ext/priv-app/DolbySound/DolbySound.apk
+system_ext/priv-app/daxService/daxService.apk
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
+vendor/etc/dolby/dax-default.xml
+vendor/etc/media_codecs_dolby_audio.xml
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-default-seccomp_policy
+vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
+vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml
+vendor/lib64/libcodec2_soft_dolby.so
+vendor/lib64/libcodec2_store_dolby.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libcodec2_soft_ac4dec.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/libdeccfg.so
+vendor/lib64/libcodec2_soft_ddpdec.so
+vendor/lib64/libdlbpreg.so
+vendor/lib64/soundfx/libbundlewrapper1.so
+vendor/lib64/soundfx/libbundlewrapper2.so
+vendor/lib64/soundfx/libbundlewrapper3.so
+vendor/lib64/soundfx/libbundlewrapper4.so
+vendor/lib64/soundfx/libswdap.so|df21fbe4475431ea8f715f9d58da0cfec9f92fd7
+vendor/lib64/soundfx/libdlbvol.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libswvqe.so
+vendor/lib64/liboem_specific.so
+
 # eUICC
 product/etc/permissions/jp.co.sony.mc.euiccmemoryreset.xml
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
@@ -1180,6 +1214,18 @@ product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGo
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
+# HX
+vendor/etc/alc.speaker.bin
+vendor/etc/DrangeparaAAC128.bin
+vendor/etc/DrangeparaAAC256.bin
+vendor/etc/DrangeparaAAC64.bin
+vendor/etc/DrangeparaMP3_128.bin
+vendor/etc/DrangeparaMP3_160.bin
+vendor/etc/DrangeparaMP3_192.bin
+vendor/etc/DrangeparaPCM441.bin
+vendor/etc/DrangeparaPCM48.bin
+vendor/etc/dsx_param_file.bin
 
 # IDD
 vendor/bin/hw/vendor.semc.system.idd@1.1-service
@@ -1775,6 +1821,29 @@ vendor/lib64/sensors.ssc.so
 # Snapdragon Computer Vision Engine
 vendor/lib64/libfastcvopt.so
 
+# SoundEnhancement
+system_ext/etc/permissions/com.sonyericsson.soundenhancement.xml
+system_ext/priv-app/SoundEnhancement/SoundEnhancement.apk|3f229a280e4ac1f7088195488395ba12fe92a153
+
+# Sound FX Libraries
+vendor/lib64/libXtcApi.so
+vendor/lib64/libaudiokeymgr.so
+vendor/lib64/libaudiosnpewrapper.so
+vendor/lib64/libaudiosnpewrapper_context.so
+vendor/lib64/libcodec2_soft_mha1dec.so
+vendor/lib64/libcodec2_soft_mhm1dec.so
+vendor/lib64/libiVptApi.so
+vendor/lib64/libiVptHkiDec.so
+vendor/lib64/libiVptLibC.so
+vendor/lib64/librebuffering.so
+vendor/lib64/libtsrspkenhance.so
+vendor/lib64/libupmix-lib.so
+vendor/lib64/libznr.so
+vendor/lib64/soundfx/libdnnrwrapper.so
+vendor/lib64/soundfx/libtsrspatializer.so
+vendor/lib64/soundfx/libtsrupmix.so
+vendor/lib64/soundfx/libznrwrapper.so
+
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
@@ -1925,6 +1994,12 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvaidl.so
 
+# Wind noise
+vendor/etc/windnoise_reduction_stat.data
+vendor/etc/windnoise_reduction_back.data
+vendor/etc/windnoise_reduction.data
+vendor/etc/windnoise_reduction_stat_back.data
+
 # Other
 vendor/etc/disp_color_conf.xml
 vendor/etc/disp_panel_conf.xml
@@ -1971,3 +2046,20 @@ vendor/firmware/touch_module_id_0x01.img
 
 # Wifi firmware
 vendor/etc/wifi/wpa_supplicant.conf
+
+# 360 RA
+product/overlay/ThreeSixtyRASystem-pdx234-Overlay.apk
+system_ext/app/ThreeSixtyRASettings/ThreeSixtyRASettings.apk
+system_ext/etc/permissions/com.sony.threesixtyra.audiofx.xml
+system_ext/etc/permissions/jp.co.sony.threesixtyra.system.xml
+system_ext/framework/com.sony.threesixtyra.audiofx.jar
+system_ext/priv-app/ThreeSixtyRASystem/ThreeSixtyRASystem.apk|c17de58fd57f07f253c7278ea25e2f4d36073489
+vendor/bin/hw/android.hardware.media.c2@1.0-threesixty-ra-service
+vendor/etc/media_codecs_sony_c2_audio.xml
+vendor/etc/init/android.hardware.media.c2@1.0-threesixty-ra-service.rc
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-default-seccomp_policy
+vendor/etc/vintf/manifest/vendor.threesixty_ra.codec2.xml
+vendor/lib64/libthreesixty_ra_codec2_store.so
+
+# 360 RA data file
+vendor/etc/XTC_speaker_coef.hki
